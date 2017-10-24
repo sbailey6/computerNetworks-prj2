@@ -14,6 +14,12 @@ int initNet(char *netConfig){
 	while(fgets(line, sizeof(line), fd)){
 		//now we parse the line and create the node corrseponding to that line.
 		printf(line);
+		char * token;
+		token = strtok(line, " ");
+		while(token != NULL){
+			printf("%s\n", token);
+			token = strtok(NULL, " ");
+		}
 
 	}
 
